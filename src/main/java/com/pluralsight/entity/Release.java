@@ -1,4 +1,4 @@
-package com.pluralsight.fundamentals.entity;
+package com.pluralsight.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

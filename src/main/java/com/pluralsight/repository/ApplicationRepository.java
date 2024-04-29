@@ -1,6 +1,6 @@
-package com.pluralsight.fundamentals.repository;
+package com.pluralsight.repository;
 
-import com.pluralsight.fundamentals.entity.Application;
+import com.pluralsight.entity.Application;
 import org.springframework.data.repository.CrudRepository;
 
 public interface ApplicationRepository extends CrudRepository<Application, Long> {

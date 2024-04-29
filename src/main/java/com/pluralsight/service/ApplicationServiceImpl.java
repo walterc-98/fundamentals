@@ -1,7 +1,7 @@
-package com.pluralsight.fundamentals.service;
+package com.pluralsight.service;
 
-import com.pluralsight.fundamentals.entity.Application;
-import com.pluralsight.fundamentals.repository.ApplicationRepository;
+import com.pluralsight.entity.Application;
+import com.pluralsight.repository.ApplicationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

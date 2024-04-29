@@ -1,9 +1,8 @@
-package com.pluralsight.fundamentals.web;
+package com.pluralsight.web;
 
-import com.pluralsight.fundamentals.repository.ApplicationRepository;
-import com.pluralsight.fundamentals.service.ApplicationService;
-import com.pluralsight.fundamentals.service.ReleaseService;
-import com.pluralsight.fundamentals.service.TicketService;
+import com.pluralsight.service.ApplicationService;
+import com.pluralsight.service.ReleaseService;
+import com.pluralsight.service.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -34,5 +33,17 @@ public class TzaController {
     public String retrieveApplications(Model model){
         model.addAttribute("applications", applicationService.listApplications());
         return "applications";
+    }
+
+    @GetMapping("/tickets")
+    public String retrieveTickets(Model model){
+        model.addAttribute("tickets", ticketService.listTickets());
+        return "tickets";
+    }
+
+    @GetMapping("/releases")
+    public String retrieveReleases(Model model){
+        model.addAttribute("releases", releaseService.listReleases());
+        return "releases";
     }
 }
