@@ -24,7 +24,7 @@ public class Mutation implements GraphQLMutationResolver {
     }
 
     public boolean deleteApplication(Long id){
-        applicationRepository.findById(id);
+        applicationRepository.deleteById(id);
         return true;
     }
 
